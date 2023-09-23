@@ -1,0 +1,22 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production",
+        "compile:sass": "node-sass ./resources/sass/main.scss ./public/css/style.css",
+        "watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
+    },
+    "devDependencies": {
+        "axios": "^0.21",
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.19",
+        "node-sass": "^6.0.1",
+        "nodemon": "^2.0.15",
+        "postcss": "^8.1.14"
+    }
+}

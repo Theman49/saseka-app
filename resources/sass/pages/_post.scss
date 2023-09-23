@@ -1,0 +1,30 @@
+body#post{
+    background: #000;
+    color: #fff;
+
+    & #karya {
+        & img,
+        & video {
+            width: 100%;
+            height: 500px;
+            @media only screen and(max-width: 425px){
+                height: 250px;
+            }
+        }
+
+        & iframe {
+            width: 100%;
+            height: 800px;
+
+            @media only screen and(max-width: 425px){
+                height: 400px;
+            }
+        }
+
+        & .deskripsi {
+            @media only screen and(max-width: 425px){
+                font-size: .9rem;
+            }
+        }
+    }
+}

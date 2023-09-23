@@ -1,0 +1,49 @@
+.grid {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-row-gap: 2rem;
+
+    @media only screen and(max-width: 425px){
+        grid-template-columns: 50% 50%;
+    }
+    @media only screen and(max-width: 320px){
+        grid-template-columns: 100%;
+    }
+
+    & .item {
+        width: 95%;
+        transition: all .5s ease;
+
+        @media only screen and(max-width: 320px){
+            width: 100%;
+        }
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+
+            & .judul {
+                font-size: 1.3rem;
+            }
+        }
+
+        & .cover {
+            display: inline-block;
+            width: 100%;
+
+            &:hover {
+                border: 1px solid #D8E3E7;
+            }
+        }
+
+        & .judul {
+            color: #D8E3E7;
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: .5rem;
+            transition: all .3s ease;
+        }
+    }
+}

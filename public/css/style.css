@@ -1,0 +1,233 @@
+.heading-secondary {
+  font-size: 2rem;
+  margin-bottom: 1rem; }
+  @media only screen and (max-width: 425px) {
+    .heading-secondary {
+      font-size: 1.8rem; } }
+
+.u-line-title {
+  position: relative;
+  color: #D8E3E7; }
+  .u-line-title::after {
+    content: "";
+    position: absolute;
+    border-top: 1px solid #D8E3E7;
+    top: 50%;
+    right: 0;
+    width: 80%; }
+    @media only screen and (max-width: 425px) {
+      .u-line-title::after {
+        width: 60%; } }
+
+.password input#password {
+  display: inline-block; }
+
+.password__toggle-eye {
+  margin-left: -30px;
+  cursor: pointer; }
+
+.footer {
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: row; }
+  @media only screen and (max-width: 425px) {
+    .footer {
+      flex-direction: column;
+      font-size: 1rem; } }
+  .footer__aboutUs {
+    width: 30%; }
+    @media only screen and (max-width: 425px) {
+      .footer__aboutUs {
+        width: 100%;
+        margin: 2rem 0; } }
+  .footer__sosmed ul li {
+    list-style: none;
+    transition: all .3s ease; }
+    .footer__sosmed ul li:hover {
+      transform: translateX(0.5rem) scale(1.1); }
+    .footer__sosmed ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.4rem; }
+      .footer__sosmed ul li a i {
+        margin-right: 1rem; }
+
+.logo-navbar {
+  width: 50px;
+  height: 50px; }
+  @media only screen and (max-width: 425px) {
+    .logo-navbar {
+      width: 30px;
+      height: 30px; } }
+
+.grid {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-row-gap: 2rem; }
+  @media only screen and (max-width: 425px) {
+    .grid {
+      grid-template-columns: 50% 50%; } }
+  @media only screen and (max-width: 320px) {
+    .grid {
+      grid-template-columns: 100%; } }
+  .grid .item {
+    width: 95%;
+    transition: all .5s ease; }
+    @media only screen and (max-width: 320px) {
+      .grid .item {
+        width: 100%; } }
+    .grid .item:hover {
+      cursor: pointer;
+      transform: scale(1.05); }
+      .grid .item:hover .judul {
+        font-size: 1.3rem; }
+    .grid .item .cover {
+      display: inline-block;
+      width: 100%; }
+      .grid .item .cover:hover {
+        border: 1px solid #D8E3E7; }
+    .grid .item .judul {
+      color: #D8E3E7;
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-block;
+      margin-top: .5rem;
+      transition: all .3s ease; }
+
+body#home {
+  background: #000;
+  color: #fff; }
+  body#home .banner {
+    height: 60vh;
+    background-color: white; }
+    @media only screen and (max-width: 425px) {
+      body#home .banner {
+        height: 30vh; } }
+    body#home .banner-text {
+      position: absolute;
+      top: 50%;
+      color: black;
+      background-color: whitesmoke;
+      border-radius: 50px;
+      padding: 10px 20px;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      @media only screen and (max-width: 425px) {
+        body#home .banner-text {
+          font-size: .8rem;
+          padding: 8px 18px; } }
+    body#home .banner .carousel-inner {
+      height: 100%; }
+      body#home .banner .carousel-inner .carousel-item {
+        height: 100%; }
+  body#home .naskah__container {
+    overflow-x: auto; }
+  body#home .naskah__item {
+    width: 300px;
+    display: inline-block;
+    margin: 0 10px; }
+  body#home .naskah__cover {
+    width: 100%;
+    height: 200px; }
+  body#home .naskah__judul {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #51C4D3; }
+    body#home .naskah__judul:hover {
+      cursor: pointer; }
+    @media only screen and (max-width: 425px) {
+      body#home .naskah__judul {
+        font-size: 1.4rem; } }
+  body#home .naskah__button {
+    width: 100%;
+    text-align: center; }
+    body#home .naskah__button a {
+      font-size: 0rem;
+      width: 50%;
+      padding: 2px 9px;
+      display: inline-block;
+      transition: all .5s ease-in; }
+      body#home .naskah__button a:hover {
+        width: 100%;
+        font-size: 2rem;
+        padding: .375rem .75rem; }
+
+body#musik {
+  background: #000;
+  color: #fff; }
+
+body#rupa {
+  background: #000;
+  color: #fff; }
+
+body#sastra {
+  background: #000;
+  color: #fff; }
+
+body#post {
+  background: #000;
+  color: #fff; }
+  body#post #karya img,
+  body#post #karya video {
+    width: 100%;
+    height: 500px; }
+    @media only screen and (max-width: 425px) {
+      body#post #karya img,
+      body#post #karya video {
+        height: 250px; } }
+  body#post #karya iframe {
+    width: 100%;
+    height: 800px; }
+    @media only screen and (max-width: 425px) {
+      body#post #karya iframe {
+        height: 400px; } }
+  @media only screen and (max-width: 425px) {
+    body#post #karya .deskripsi {
+      font-size: .9rem; } }
+
+body#posts table {
+  width: 75%; }
+  @media only screen and (max-width: 425px) {
+    body#posts table {
+      width: 100%;
+      font-size: .7rem; } }
+
+body#edit form {
+  width: 75%; }
+  @media only screen and (max-width: 425px) {
+    body#edit form {
+      width: 100%; } }
+
+body#edit img,
+body#edit video,
+body#edit iframe {
+  width: 600px;
+  height: 400px; }
+  @media only screen and (max-width: 425px) {
+    body#edit img,
+    body#edit video,
+    body#edit iframe {
+      width: 100%;
+      height: 200px; } }
+
+body#insert .progress {
+  position: relative;
+  width: 100%;
+  border: 1px solid #7F98B2;
+  padding: 1px;
+  border-radius: 3px; }
+
+body#insert .bar {
+  background-color: #B4F5B4;
+  width: 0%;
+  height: 25px;
+  border-radius: 3px; }
+
+body#insert .percent {
+  position: absolute;
+  display: inline-block;
+  top: 3px;
+  left: 48%;
+  color: #7F98B2; }
